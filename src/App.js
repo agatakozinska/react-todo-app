@@ -10,11 +10,18 @@ class App extends Component {
       {id: 3, content: 'Repeat!'}
     ]
   }
+  deleteTodo = (id) => {
+    const todos = this.state.todos.filter(todo => {return todo.id !== id})
+
+    this.setState({
+      todos: todos
+    })
+  }
   render() {
     return (
       <div className="Todos">
         <h1 className="Todos__heading">Todo List</h1>
-        <TodoList todos={this.state.todos} />
+        <TodoList todos={this.state.todos} deleteTodo={this.deleteTodo}/>
       </div>
     );
   }
