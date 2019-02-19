@@ -1,4 +1,44 @@
-.App {
-  text-align: center;
+:root {
+  --violet: #422B79;
+  --marine: #23E9B6;
+  --white: #fff;
+  --dark: #443F46;
+
 }
+
+.Todos {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 40px ;
+  background-color: var(--violet);
+  color: var(--dark);
+  font-size: 16px;
+}
+
+label {
+  color: inherit;
+}
+
+.Todos__heading {
+  font-family: 'Oswald', sans-serif;
+  color: var(--white);
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.Todos__heading::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 7px;
+  left: 33%;
+  width: 33%;
+  height: 6px;
+  background-color: var(--marine);
+}
+
 
