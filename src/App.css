@@ -34,11 +34,25 @@ label {
   content: '';
   position: absolute;
   z-index: -1;
-  bottom: 7px;
+  bottom: 0px;
   left: 33%;
   width: 33%;
   height: 6px;
   background-color: var(--marine);
 }
 
+.Todos__form {
+  display: flex;
+  align-items: baseline;
+}
 
+.Todos__form > input[type=text] {
+  width: 90%;
+}
+
+.btn-floating.btn-small {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 15px;
+}
