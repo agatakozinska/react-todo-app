@@ -47,7 +47,9 @@ label {
 }
 
 .Todos__form > input[type=text] {
+  color: var(--white);
   width: 90%;
+  margin-bottom: 30px;
 }
 
 .btn-floating.btn-small {

@@ -20,9 +20,11 @@ class App extends Component {
   }
 
   addTodo = (newTodo) => {
+    if (newTodo.content === '') {
+      return false;
+    }
     newTodo.id = Math.random();
     let todos = [...this.state.todos, newTodo];
-
     this.setState({
       todos
     })
