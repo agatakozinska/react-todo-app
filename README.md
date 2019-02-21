@@ -1,5 +1,12 @@
-To do app with React.
+# Todo app
+Just simple version of Todo app with React
+* diplay todos
+* add a new todo
+* delete todo
 
+> things that should be fixed (some validations) -> prevent user from adding completly empty string (spaces only)
+
+<hr/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
